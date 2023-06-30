@@ -1,7 +1,7 @@
 /*
  * @Author: Akira
  * @Date: 2023-04-20 16:34:53
- * @LastEditTime: 2023-06-28 16:37:19
+ * @LastEditTime: 2023-06-30 16:16:08
  */
 const fs = require("fs");
 const menus = require("./config/menus");
@@ -34,7 +34,7 @@ function getChildren(menu) {
       name = item.id.substring(1);
       c += `{
         path: "/${name}",
-        component: () => import("@/views/${menuName}/${name}.vue"),
+        component: () => import("@/view/${menuName}/${name}.vue"),
         name: "${name.replace(/^\w/, (c) => c.toUpperCase())}",
         meta: { title: "${name}", requireAuth: true, affix: false, closable: true },
       },`;
@@ -42,7 +42,7 @@ function getChildren(menu) {
   } else {
     c += `{
       path: "",
-      component: () => import("@/views/${menuName}/index.vue"),
+      component: () => import("@/view/${menuName}/index.vue"),
       name: "${menuName.replace(/^\w/, (c) => c.toUpperCase())}",
       meta: { title: "${menuName}", requireAuth: true, affix: ${menuName == "home" ? true : false}, closable: true },
     },`;
