@@ -13,7 +13,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/home/index.vue"),
+      component: () => import("@/view/home/index.vue"),
       name: "Home",
       meta: { title: "home", requireAuth: true, affix: true, closable: true },
     },
@@ -25,7 +25,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/news/index.vue"),
+      component: () => import("@/view/news/index.vue"),
       name: "News",
       meta: { title: "news", requireAuth: true, affix: false, closable: true },
     },
@@ -37,12 +37,12 @@
   children: [
     {
         path: "/manager_1",
-        component: () => import("@/views/manager/manager_1.vue"),
+        component: () => import("@/view/manager/manager_1.vue"),
         name: "Manager_1",
         meta: { title: "manager_1", requireAuth: true, affix: false, closable: true },
       },{
         path: "/manager_2",
-        component: () => import("@/views/manager/manager_2.vue"),
+        component: () => import("@/view/manager/manager_2.vue"),
         name: "Manager_2",
         meta: { title: "manager_2", requireAuth: true, affix: false, closable: true },
       },
@@ -54,7 +54,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/manager1/index.vue"),
+      component: () => import("@/view/manager1/index.vue"),
       name: "Manager1",
       meta: { title: "manager1", requireAuth: true, affix: false, closable: true },
     },
@@ -66,7 +66,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/manager2/index.vue"),
+      component: () => import("@/view/manager2/index.vue"),
       name: "Manager2",
       meta: { title: "manager2", requireAuth: true, affix: false, closable: true },
     },
@@ -78,7 +78,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/manager3/index.vue"),
+      component: () => import("@/view/manager3/index.vue"),
       name: "Manager3",
       meta: { title: "manager3", requireAuth: true, affix: false, closable: true },
     },
@@ -90,7 +90,7 @@
   children: [
     {
       path: "",
-      component: () => import("@/views/manager4/index.vue"),
+      component: () => import("@/view/manager4/index.vue"),
       name: "Manager4",
       meta: { title: "manager4", requireAuth: true, affix: false, closable: true },
     },
